@@ -1,0 +1,33 @@
+img{
+    width: 20px;
+    height: 15px;
+}
+h1, h2 {
+    font-family: Arial, sans-serif;
+    font-size: 16pt;
+    font-weight: bold;
+    font-style: italic;
+    text-decoration: underline;
+}
+
+h1 {
+    color: black; /* Màu đen cho tiêu đề cấp 1 */
+}
+
+h2 {
+    color: blue; /* Màu xanh cho tiêu đề cấp 2 */
+}
+
+/* Định dạng cho văn bản */
+p {
+    font-family: 'Times New Roman', serif;
+    font-size: 14pt;
+    font-style: italic;
+    color: blue; /* Màu xanh cho văn bản */
+}
+
+/* Định dạng cho các hyperlink */
+a {
+    color: red; /* Màu đỏ cho hyperlink */
+    text-decoration: none; /* Không có gạch chân */
+}
