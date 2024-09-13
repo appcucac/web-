@@ -31,3 +31,27 @@ a {
     color: red; /* Màu đỏ cho hyperlink */
     text-decoration: none; /* Không có gạch chân */
 }
+/* File: myStyle.css */
+
+/* Style cho tiêu đề */
+.Tieu_de {
+    font-weight: bold;
+    color: blue; /* Thay đổi màu chữ thành xanh */
+    font-family: Arial, sans-serif;
+    font-size: 18pt;
+}
+
+/* Style cho nội dung */
+.Noi_dung {
+    font-style: italic;
+    color: purple; /* Thay đổi màu chữ thành tím */
+    font-family: Arial, sans-serif;
+    font-size: 14pt;
+}
+
+/* Style cho siêu liên kết */
+.Sieu_lien_ket {
+    font-style: italic;
+    text-decoration: none; /* Không gạch chân */
+    color: green; /* Màu của liên kết */
+}
