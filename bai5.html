@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Tìm UCLN của 2 số</title>
+</head>
+<body>
+    <h1>Tìm UCLN của 2 số</h1>
+    <input type="number" id="a" placeholder="Nhập số a" />
+    <input type="number" id="b" placeholder="Nhập số b" />
+    <button onclick="timUCLN()">Tính UCLN</button>
+    <p id="result"></p>
+
+    <script>
+        function timUCLN() {
+            const a = parseInt(document.getElementById('a').value);
+            const b = parseInt(document.getElementById('b').value);
+            let ucln;
+            for (let i = 1; i <= Math.min(a, b); i++) {
+                if (a % i === 0 && b % i === 0) {
+                    ucln = i;
+                }
+            }
+            document.getElementById('result').innerText = "UCLN của " + a + " và " + b + " là: " + ucln;
+        }
+    </script>
+</body>
+</html>

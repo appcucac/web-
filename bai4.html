@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Kiểm tra số nguyên tố</title>
+</head>
+<body>
+    <h1>Kiểm tra số nguyên tố</h1>
+    <input type="number" id="n" placeholder="Nhập n" />
+    <button onclick="kiemTraNguyenTo()">Kiểm tra</button>
+    <p id="result"></p>
+
+    <script>
+        function kiemTraNguyenTo() {
+            const n = parseInt(document.getElementById('n').value);
+            if (n < 2) {
+                document.getElementById('result').innerText = n + " không phải là số nguyên tố.";
+                return;
+            }
+            for (let i = 2; i <= Math.sqrt(n); i++) {
+                if (n % i === 0) {
+                    document.getElementById('result').innerText = n + " không phải là số nguyên tố.";
+                    return;
+                }
+            }
+            document.getElementById('result').innerText = n + " là số nguyên tố.";
+        }
+    </script>
+</body>
+</html>
